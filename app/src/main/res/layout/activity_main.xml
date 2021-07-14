@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_activity_border"
+    tools:context="com.catsoft.esp32camera.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <!-- include
+            android:id="@+id/include"
+            layout="@layout/app_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="visible"
+            tools:ignore="IncludeLayoutParam"/ -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:theme="@android:style/Theme.Black"
+            android:transitionGroup="true"
+            tools:context=".MainActivity">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_listview">
+
+                <TableRow
+                    android:id="@+id/tableRow0"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_listview"
+                    android:gravity="center_horizontal"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:id="@+id/HeaderTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:paddingLeft="2dp"
+                        android:text="@string/lst_title"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/lightGray"
+                        android:textSize="20sp"
+                        android:textStyle="normal|bold"
+                        tools:textStyle="normal|bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:clipToPadding="false"
+                    android:gravity="top|bottom|fill_horizontal"
+                    android:minHeight="52dp">
+
+                    <ListView
+                        android:id="@+id/listView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="top|bottom"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:drawSelectorOnTop="false"
+                        android:listSelector="@color/white"
+                        android:minHeight="190dp"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="5.0sp"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent">
+
+                    <Button
+                        android:id="@+id/btnRefresh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button"
+                        android:backgroundTintMode="screen"
+                        android:minHeight="34dp"
+                        android:text="@string/btn_refresh"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@android:color/white"
+                        android:textStyle="normal|bold" />
+                </TableRow>
+
+            </TableLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

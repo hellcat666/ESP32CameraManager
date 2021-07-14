@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ESP32CameraManager Version 1</string>
+    <string name="lst_title">Cameras</string>
+    <string name="btn_refresh">REFRESH</string>
+
+    <!-- Menu -->
+    <string name="back">Back</string>
+    <string name="exit">Exit</string>
+    <string name="settings">Settings</string>
+
+</resources>
+
